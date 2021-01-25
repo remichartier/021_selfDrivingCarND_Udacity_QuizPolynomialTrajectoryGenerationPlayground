@@ -20,8 +20,7 @@ There are 5 files in the provided code. You'll probably want to start by modifyi
 4. `constants.py` - constants like speed limit, vehicle size, etc...
 5. `helpers.py` - helper functions used by other files.
 
-Supporting Materials
+## Supporting Materials
+- [Trajectoryexercise2](http://video.udacity-data.com.s3.amazonaws.com/topher/2017/October/59d5bfcb_trajectoryexercise2/trajectoryexercise2.zip)
 
-[Trajectoryexercise2](http://video.udacity-data.com.s3.amazonaws.com/topher/2017/October/59d5bfcb_trajectoryexercise2/trajectoryexercise2.zip)
-
-[Trajectoryexercise2_python3](https://d17h27t6h515a5.cloudfront.net/topher/2017/December/5a3ea459_trajectoryexercise2-python3/trajectoryexercise2-python3.zip)
+- [Trajectoryexercise2_python3](https://d17h27t6h515a5.cloudfront.net/topher/2017/December/5a3ea459_trajectoryexercise2-python3/trajectoryexercise2-python3.zip)
