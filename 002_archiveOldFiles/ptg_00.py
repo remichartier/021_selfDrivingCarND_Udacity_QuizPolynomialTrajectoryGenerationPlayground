@@ -3,15 +3,8 @@ import random
 from cost_functions import *
 from constants import *
 
-# History changes
-# v01 : comments, modify WEIGHTED_COST_FUNCTIONS to record several configs with 
-# 		weights[]
-
 # TODO - tweak weights to existing cost functions
-# Note : following Cost Functions are empty : 
-#	def stays_on_road_cost(traj, target_vehicle, delta, T, predictions):
-#	def exceeds_speed_limit_cost(traj, target_vehicle, delta, T, predictions):
-'''WEIGHTED_COST_FUNCTIONS = [
+WEIGHTED_COST_FUNCTIONS = [
     (time_diff_cost,    1),
     (s_diff_cost,       1),
     (d_diff_cost,       1),
@@ -22,23 +15,6 @@ from constants import *
     (buffer_cost,       1),
     (max_accel_cost,    1),
     (total_accel_cost,  1),
-]'''
-# give a high value to the weight of collision (collision_cost), 
-# and also it is important that we would like to achieve our goals, 
-# so s_diff_cost and d_diff_cost also can be higher (but lower than the 
-# collision cost).
-weights = [250,250,250,1,1,1,500,1,1,1]
-WEIGHTED_COST_FUNCTIONS = [
-    (time_diff_cost,    weights[0]),
-    (s_diff_cost,       weights[1]),
-    (d_diff_cost,       weights[2]),
-    (efficiency_cost,   weights[3]),
-    (max_jerk_cost,     weights[4]),
-    (total_jerk_cost,   weights[5]),
-    (collision_cost,    weights[6]),
-    (buffer_cost,       weights[7]),
-    (max_accel_cost,    weights[8]),
-    (total_accel_cost,  weights[9]),
 ]
 
 def PTG(start_s, start_d, target_vehicle, delta, T, predictions):
